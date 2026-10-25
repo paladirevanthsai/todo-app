@@ -1,16 +1,49 @@
-# React + Vite
+# 📝 Todo App
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A responsive, modern task management web application built with **React** and **Vite**.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+🔗 **[https://paladirevanthsai-star.github.io/todo-app/](https://paladirevanthsai-star.github.io/todo-app/)**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## ✨ Features
+- ➕ **Add Tasks:** Quickly add new to-do items.
+- ✅ **Toggle Completion:** Mark items as completed or active.
+- 🔍 **Filter Tasks:** Filter by `All`, `Active`, or `Completed`.
+- 🗑️ **Delete & Clear:** Remove individual items or clear all completed tasks at once.
+- 📊 **Task Counters:** Real-time remaining and completed task count.
+- 📱 **Responsive Design:** Clean, modern UI that works on desktop and mobile.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Tech Stack
+- **Framework:** [React 19](https://react.dev/)
+- **Bundler:** [Vite](https://vite.dev/)
+- **Linter:** [Oxlint](https://oxc.rs/)
+- **Hosting / CI/CD:** GitHub Pages with GitHub Actions
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+---
+
+## 💻 Local Development
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/paladirevanthsai-star/todo-app.git
+   cd todo-app
+   ```
+
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+
+3. **Start local dev server:**
+   ```bash
+   npm run dev
+   ```
+
+4. **Build for production:**
+   ```bash
+   npm run build
+   ```
