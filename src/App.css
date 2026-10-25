@@ -1,0 +1,203 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f6fc;
+  color: #25253a;
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 50px 20px 30px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  margin: auto auto 15px;
+  border-radius: 17px;
+  background: #7060f0;
+  color: white;
+  font-size: 35px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 40px;
+}
+
+.header p {
+  color: #9291a3;
+}
+
+.todo-card {
+  max-width: 640px;
+  margin: auto;
+  padding: 24px;
+  background: white;
+  border-radius: 22px;
+  box-shadow: 0 15px 50px #30245b0c;
+}
+
+.task-form {
+  display: flex;
+  gap: 10px;
+}
+
+.task-form input {
+  flex: 1;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid #e6e4ef;
+  border-radius: 12px;
+  outline-color: #7060f0;
+}
+
+.task-form button {
+  padding: 12px 22px;
+  border: none;
+  border-radius: 12px;
+  background: #7060f0;
+  color: white;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin: 25px 0 20px;
+  color: #9291a3;
+  font-size: 14px;
+}
+
+.filters {
+  display: flex;
+  gap: 8px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #f0eff5;
+}
+
+.filters button {
+  padding: 9px 15px;
+  border: none;
+  border-radius: 9px;
+  background: transparent;
+  color: #77778c;
+}
+
+.filters button.selected {
+  background: #eeecff;
+  color: #6655e8;
+}
+
+.task-list {
+  display: grid;
+  gap: 10px;
+  padding: 18px 0;
+  margin: 0;
+  list-style: none;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 16px 12px;
+  border: 1px solid #efedf5;
+  border-radius: 12px;
+}
+
+.task label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  overflow-wrap: anywhere;
+}
+
+.task label input {
+  accent-color: #7060f0;
+  width: 17px;
+  height: 17px;
+  flex-shrink: 0;
+}
+
+.done {
+  color: #a1a1ae;
+  text-decoration: line-through;
+}
+
+.delete {
+  border: none;
+  background: transparent;
+  color: #9999a8;
+  font-size: 23px;
+}
+
+.empty {
+  padding: 25px 5px;
+  text-align: center;
+  color: #9291a3;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding-top: 20px;
+  border-top: 1px solid #f0eff5;
+  color: #858599;
+  font-size: 14px;
+}
+
+.footer button {
+  border: none;
+  background: transparent;
+  color: #7060f0;
+}
+
+.footer button:disabled {
+  color: #c6c4d3;
+  cursor: not-allowed;
+}
+
+.bottom-text {
+  margin-top: 28px;
+  text-align: center;
+  color: #9695a7;
+  font-size: 14px;
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 35px 14px;
+  }
+
+  .todo-card {
+    padding: 17px;
+  }
+
+  .header h1 {
+    font-size: 32px;
+  }
+}
+
